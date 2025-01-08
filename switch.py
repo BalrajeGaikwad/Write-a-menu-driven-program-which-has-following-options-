@@ -21,7 +21,17 @@ while True:
         print(fact)
 
     elif choice==2:
-        n=int(input("Enter the number : "))
+        n=int(input("Enter the number :"))
+        count=0
+        for i in range(1,n+1):
+            if n%i==0:
+                count=count+1
+        if count==2:
+            print(n,"prime number")
+        else:
+            print("not a prime number ")
+
+        """n=int(input("Enter the number : "))
         
         if n>1:
             is_prime=True
@@ -34,7 +44,8 @@ while True:
                 if is_prime:
                     print("This is the prime number")
                 else:
-                    print("not prime number ")
+                    print("not prime number ")"""
+        
     elif choice==3:
         n=int(input("Enter the number : "))
         if n%2==0:
